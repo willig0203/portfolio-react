@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Header from "./components/Header";
+import Contact from "./components/Contact";
 import "./App.css";
 import Nav from "./components/Nav";
 
@@ -30,6 +31,7 @@ function App() {
             contactSelected={contactSelected}
             setContactSelected={setContactSelected}
           ></Nav>
+          <Contact></Contact>
         </>
       </header>
     </div>
