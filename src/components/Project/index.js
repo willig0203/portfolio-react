@@ -34,7 +34,6 @@ const Project = () => {
       deployed: "https://takea-hike.herokuapp.com/",
     },
   ]);
-  //   const currentPhotos = photos.filter((photo) => photo.category === category);
 
   const [currentPhoto, setCurrentPhoto] = useState();
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -46,6 +45,11 @@ const Project = () => {
     console.log(currentPhoto);
   };
 
+  const openInNewTab = (url) => {
+    // 👇️ setting target to _blank with window.open
+    window.open(url, "_blank", "noopener,noreferrer");
+  };
+
   return (
     // {isModalOpen && (
     //   <Modal currentPhoto={currentPhoto} onClose={toggleModal} />
@@ -54,8 +58,12 @@ const Project = () => {
       {photos.map((image, i) => (
         <>
           <div className="flex-row">
-            <a href={image.github}>Github Repo</a>
-            <a href={image.deployed}>Deployed App</a>
+            <a href={image.github} target="_blank" rel="noopener noreferrer">
+              Github Repo
+            </a>
+            <a href={image.deployed} target="_blank" rel="noopener noreferrer">
+              Deployed App
+            </a>
           </div>
 
           <img

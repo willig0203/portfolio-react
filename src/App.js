@@ -4,6 +4,7 @@ import Contact from "./components/Contact";
 import "./App.css";
 import Nav from "./components/Nav";
 import Project from "./components/Project";
+import Footer from "./components/Footer";
 
 function App() {
   const [contactSelected, setContactSelected] = useState(false);
@@ -34,6 +35,7 @@ function App() {
           ></Nav>
           <Project></Project>
           <Contact></Contact>
+          <Footer></Footer>
         </>
       </header>
     </div>
