@@ -41,7 +41,7 @@ const Project = () => {
 
   const toggleModal = (image, i) => {
     console.log("tgl");
-    setCurrentPhoto({ ...image, index: i });
+    setCurrentPhoto({ image, index: i });
     setIsModalOpen(!isModalOpen);
     console.log(currentPhoto);
   };
@@ -62,7 +62,7 @@ const Project = () => {
             src={image.image}
             alt={image.name}
             className="img-thumbnail mx-2"
-            onClick={() => toggleModal(image, i)}
+            onClick={() => toggleModal(image.image, i)}
             key={image.name}
           />
         </>
