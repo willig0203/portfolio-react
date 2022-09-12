@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import Contact from "./components/Contact";
 import "./App.css";
 import Nav from "./components/Nav";
+import Project from "./components/Project";
 
 function App() {
   const [contactSelected, setContactSelected] = useState(false);
@@ -31,6 +32,7 @@ function App() {
             contactSelected={contactSelected}
             setContactSelected={setContactSelected}
           ></Nav>
+          <Project></Project>
           <Contact></Contact>
         </>
       </header>
