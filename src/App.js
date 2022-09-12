@@ -7,34 +7,51 @@ import Project from "./components/Project";
 import Footer from "./components/Footer";
 
 function App() {
-  const [contactSelected, setContactSelected] = useState(false);
+  // const [contactSelected, setContactSelected] = useState(false);
+
   const [categories] = useState([
-    { name: "About", description: "abo" },
-    { name: "Contact", description: "con" },
-    { name: "Portfolio", description: "port" },
+    { name: "About Me", description: "aboutme" },
+    { name: "Portfolio", description: "portfolio" },
+    { name: "Contact", description: "contact" },
     {
       name: "Resume",
-      description: "res",
+      description: "resume",
     },
   ]);
 
+  // default about me
   const [currentCategory, setCurrentCategory] = useState(categories[0]);
+
   return (
     <div className="App">
       <header className="App-header">
-        {/* <img src={logo} className="App-logo" alt="logo" /> */}
         <>
           <Header></Header>
-
           <Nav
             categories={categories}
             setCurrentCategory={setCurrentCategory}
-            currentCategory={currentCategory}
-            contactSelected={contactSelected}
-            setContactSelected={setContactSelected}
           ></Nav>
-          <Project></Project>
-          <Contact></Contact>
+
+          {currentCategory.name === "About Me"
+            ? console.log("about")
+            : console.log("notabout")}
+
+          {currentCategory.name === "Portfolio" ? (
+            <Project></Project>
+          ) : (
+            console.log("notportfolio")
+          )}
+
+          {currentCategory.name === "Contact" ? (
+            <Contact></Contact>
+          ) : (
+            console.log("notcontact")
+          )}
+
+          {currentCategory.name === "Resume"
+            ? console.log("Resume")
+            : console.log("notResume")}
+
           <Footer></Footer>
         </>
       </header>
