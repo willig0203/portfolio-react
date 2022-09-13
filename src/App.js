@@ -6,10 +6,9 @@ import Nav from "./components/Nav";
 import Project from "./components/Project";
 import Footer from "./components/Footer";
 import About from "./components/About";
+import Resume from "./components/Resume";
 
 function App() {
-  // const [contactSelected, setContactSelected] = useState(false);
-
   const [categories] = useState([
     { name: "About Me", description: "aboutme" },
     { name: "Portfolio", description: "portfolio" },
@@ -51,9 +50,11 @@ function App() {
             console.log("notcontact")
           )}
 
-          {currentCategory.name === "Resume"
-            ? console.log("Resume")
-            : console.log("notResume")}
+          {currentCategory.name === "Resume" ? (
+            <Resume></Resume>
+          ) : (
+            console.log("notResume")
+          )}
 
           <Footer></Footer>
         </>
