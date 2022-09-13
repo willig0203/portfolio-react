@@ -5,6 +5,7 @@ import "./App.css";
 import Nav from "./components/Nav";
 import Project from "./components/Project";
 import Footer from "./components/Footer";
+import About from "./components/About";
 
 function App() {
   // const [contactSelected, setContactSelected] = useState(false);
@@ -32,9 +33,11 @@ function App() {
             setCurrentCategory={setCurrentCategory}
           ></Nav>
 
-          {currentCategory.name === "About Me"
-            ? console.log("about")
-            : console.log("notabout")}
+          {currentCategory.name === "About Me" ? (
+            <About></About>
+          ) : (
+            console.log("notabout")
+          )}
 
           {currentCategory.name === "Portfolio" ? (
             <Project></Project>
