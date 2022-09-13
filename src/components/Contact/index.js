@@ -4,12 +4,15 @@ import { validateEmail } from "../../utils/helpers";
 function ContactForm() {
   // JSX
   const [errorMessage, setErrorMessage] = useState("");
+
   const [formState, setFormState] = useState({
     name: "",
     email: "",
     message: "",
   });
+
   const { name, email, message } = formState;
+
   function handleChange(e) {
     if (e.target.name === "email") {
       const isValid = validateEmail(e.target.value);
@@ -40,7 +43,7 @@ function ContactForm() {
   return (
     <section>
       <h1 data-testid="h1tag">Contact me</h1>
-      <form id="contact-form" onSubmit={handleSubmit}>
+      <form className="form" id="contact-form" onSubmit={handleSubmit}>
         <div>
           <label htmlFor="name">Name:</label>
           <input

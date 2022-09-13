@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import moviefinder from "../../assets/images/projects/Movie Finder.jpg";
 import taskmasterpro from "../../assets/images/projects/Taskmaster Pro.jpg";
 import takeahike from "../../assets/images/projects/homescreenshot.jpg";
+import classNames from "classnames";
 
 const Project = () => {
   const [photos] = useState([
@@ -45,37 +46,44 @@ const Project = () => {
     console.log(currentPhoto);
   };
 
-  const openInNewTab = (url) => {
-    // 👇️ setting target to _blank with window.open
-    window.open(url, "_blank", "noopener,noreferrer");
-  };
+  const clsName = classNames("mx-2", "nav", "navActive");
 
   return (
-    // {isModalOpen && (
-    //   <Modal currentPhoto={currentPhoto} onClose={toggleModal} />
-    // )}
-    <div className="flex-row">
-      {photos.map((image, i) => (
-        <>
-          <div className="flex-row">
-            <a href={image.github} target="_blank" rel="noopener noreferrer">
-              Github Repo
-            </a>
-            <a href={image.deployed} target="_blank" rel="noopener noreferrer">
-              Deployed App
-            </a>
-          </div>
+    <section>
+      <h1>Portfolio</h1>
+      <div className="flex-row">
+        {photos.map((image, i) => (
+          <>
+            <div className="flex-row">
+              <a
+                className={clsName}
+                href={image.github}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Github Repo
+              </a>
+              <a
+                className={clsName}
+                href={image.deployed}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Deployed App
+              </a>
+            </div>
 
-          <img
-            src={image.image}
-            alt={image.name}
-            className="img-thumbnail mx-2"
-            onClick={() => toggleModal(image.image, i)}
-            key={image.name}
-          />
-        </>
-      ))}
-    </div>
+            <img
+              src={image.image}
+              alt={image.name}
+              className="img-thumbnail mx-2"
+              onClick={() => toggleModal(image.image, i)}
+              key={image.name}
+            />
+          </>
+        ))}
+      </div>
+    </section>
   );
 };
 
