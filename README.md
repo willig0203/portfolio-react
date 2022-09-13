@@ -1,4 +1,4 @@
-# Take a Hike
+# Portfolio React
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -29,13 +29,13 @@ Use the live app: [https://willig0203.github.io/portfolio-react/](https://willig
 
 ## Screenshots
 
-|              <b>Image running on a computer</b>               |
-| :-----------------------------------------------------------: |
-| ![space-1.jpg](./assets/images/screenshots/Screenshotweb.jpg) |
+|                <b>Image running on a computer</b>                 |
+| :---------------------------------------------------------------: |
+| ![space-1.jpg](./src/assets/images/screenshots/Screenshotweb.jpg) |
 
-|             <b>Image running on a mobile device</b>              |
-| :--------------------------------------------------------------: |
-| ![space-2.jpg](./assets/images/screenshots/Screenshotmobile.jpg) |
+|               <b>Image running on a mobile device</b>                |
+| :------------------------------------------------------------------: |
+| ![space-2.jpg](./src/assets/images/screenshots/Screenshotmobile.jpg) |
 
 ## License
 
