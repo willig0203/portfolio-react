@@ -1,70 +1,60 @@
-# Getting Started with Create React App
+# Take a Hike
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## Available Scripts
+## This is a web application built using React to showcase my development projects, and deployed using github pages at [https://willig0203.github.io/portfolio-react/](https://willig0203.github.io/portfolio-react/).
 
-In the project directory, you can run:
+## Table of Contents:
 
-### `npm start`
+- [Installation](#installation)
+- [Usage](#usage)
+- [Screenshots](#screenshots)
+- [License](#license)
+- [Collaborators](#collaborators)
+- [Contributing](#contributing)
+- [Testing](#tests)
+- [Questions](#questions)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Installation
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Clone the repository from [GitHub](https://github.com/willig0203/portfolio-react) onto your machine in a local folder. This program will require Node.js. Install node.js: [Installation Guide](https://coding-boot-camp.github.io/full-stack/nodejs/how-to-install-nodejs). From the root of the project folder do an npm (Node Package Manager) install to get the package dependencies (type `npm install` on the command line).
 
-### `npm test`
+## Usage
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+In your teminal at the root folder type `npm start` your browser will open automatically.
 
-### `npm run build`
+OR
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Use the live app: [https://willig0203.github.io/portfolio-react/](https://willig0203.github.io/portfolio-react/)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Screenshots
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+|              <b>Image running on a computer</b>               |
+| :-----------------------------------------------------------: |
+| ![space-1.jpg](./assets/images/screenshots/Screenshotweb.jpg) |
 
-### `npm run eject`
+|             <b>Image running on a mobile device</b>              |
+| :--------------------------------------------------------------: |
+| ![space-2.jpg](./assets/images/screenshots/Screenshotmobile.jpg) |
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## License
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+&copy; 2022 by Gary Williams (Trademark: Garyware LLC)
+This project is licensed under the MIT license.
+https://opensource.org/licenses/MIT
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Collaborators:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Gary Williams
 
-## Learn More
+## Contributing
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+To contribute to this project please make a new issue or pull request.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Tests
 
-### Code Splitting
+No test at this time.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Questions
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Contact Gary Williams at: [willig0203@gmail.com](mailto:willig0203@gmail.com) or [GitHub](https://github.com/willig0203/)
