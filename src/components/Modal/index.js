@@ -1,7 +1,8 @@
 import React from "react";
 
 function Modal({ onClose, currentPhoto }) {
-  const { name, category, description, index } = currentPhoto;
+  console.log(currentPhoto);
+  const { name, description } = currentPhoto;
 
   return (
     <div className="modalBackdrop">
@@ -10,7 +11,7 @@ function Modal({ onClose, currentPhoto }) {
         <img
           // src={require(`../../assets/images${category}/${index}.jpg`)}
 
-          src={require(`../../assets/images/Movie Finder.jpg`)}
+          src={currentPhoto}
           alt="current category"
         />
         <p>{description}</p>

@@ -12,7 +12,9 @@ function Header() {
         style={{ width: "25%" }}
         alt="headshot"
       />
-      <h1 id="about">Gary Williams</h1>
+      <h1 className="mx-2" id="about">
+        Gary Williams
+      </h1>
       <img
         src={headerlogo}
         className="my-2"
