@@ -66,28 +66,18 @@ const Project = () => {
     },
   ]);
 
-  const [currentPhoto, setCurrentPhoto] = useState();
-  const [isModalOpen, setIsModalOpen] = useState(false);
-
-  const toggleModal = (image, i) => {
-    console.log("tgl");
-    setCurrentPhoto({ image, index: i });
-    setIsModalOpen(!isModalOpen);
-    console.log(currentPhoto);
-  };
-
   const clsName = classNames("mx-2", "nav", "navActive");
+
+  const clsNameRow = classNames("mx-2", "flex-row", "space-between");
 
   return (
     <section>
       <h1>Portfolio</h1>
-      {/* {isModalOpen && (
-        <Modal currentPhoto={currentPhoto} onClose={toggleModal} />
-      )} */}
-      <div className="flex-row">
+
+      <div className={clsNameRow}>
         {photos.map((image, i) => (
           <>
-            <div className="flex-row">
+            <div className="flex-col">
               <div>
                 <h5>{image.name}</h5>
                 <a
@@ -108,21 +98,20 @@ const Project = () => {
                   Deployed App
                 </a>
               </div>
-            </div>
 
-            <img
-              style={{
-                height: 300,
-                // flex: 1,
-                width: null,
-                aspectRatio: 1,
-              }}
-              src={image.image}
-              alt={image.name}
-              className="img-thumbnail mx-2"
-              onClick={() => toggleModal(image.image, i)}
-              key={image.name}
-            />
+              <img
+                style={{
+                  height: 300,
+                  // flex: 1,
+                  width: null,
+                  aspectRatio: 1,
+                }}
+                src={image.image}
+                alt={image.name}
+                className="img-thumbnail mx-2"
+                key={image.name}
+              />
+            </div>
           </>
         ))}
       </div>

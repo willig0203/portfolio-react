@@ -5,11 +5,11 @@ import headshot from "../../assets/images/header/GaryPicHead.JPG";
 
 function Header() {
   return (
-    <div className="flex-row">
+    <header className="flex-row space-between">
       <img
         src={headshot}
         className="my-2"
-        style={{ width: "25%" }}
+        style={{ maxWidth: 101, maxHeight: 101 }}
         alt="headshot"
       />
       <h1 className="mx-2" id="about">
@@ -18,7 +18,7 @@ function Header() {
       <img
         src={headerlogo}
         className="my-2"
-        style={{ width: "25%" }}
+        style={{ maxWidth: 95, maxHeight: 95 }}
         alt="headerlogo"
       />
       <img
@@ -27,7 +27,7 @@ function Header() {
         style={{ width: "100%" }}
         alt="headerimage"
       />
-    </div>
+    </header>
   );
 }
 
