@@ -6,8 +6,7 @@ import takeahike from "../../assets/images/projects/homescreenshot.jpg";
 import screenshotweb from "../../assets/images/projects/Screenshotweb.jpg";
 import passwordgenerator from "../../assets/images/projects/passwordGenerator.jpg";
 import pizzhunt from "../../assets/images/projects/pizzahuntweb.jpg";
-
-import classNames from "classnames";
+import ProjectChild from "../ProjectChild";
 
 const Project = () => {
   const [photos] = useState([
@@ -66,53 +65,12 @@ const Project = () => {
     },
   ]);
 
-  const clsName = classNames("mx-2", "nav", "navActive");
-
-  const clsNameRow = classNames("mx-2", "flex-row", "space-between");
-
   return (
     <section>
       <h1>Portfolio</h1>
-
-      <div className={clsNameRow}>
-        {photos.map((image, i) => (
-          <>
-            <div className="flex-col">
-              <div>
-                <h5>{image.name}</h5>
-                <a
-                  className={clsName}
-                  href={image.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Github Repo
-                </a>
-
-                <a
-                  className={clsName}
-                  href={image.deployed}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Deployed App
-                </a>
-              </div>
-
-              <img
-                style={{
-                  height: 300,
-                  // flex: 1,
-                  width: null,
-                  aspectRatio: 1,
-                }}
-                src={image.image}
-                alt={image.name}
-                className="img-thumbnail mx-2"
-                key={image.name}
-              />
-            </div>
-          </>
+      <div className={"mx-2 flex-row space-between"}>
+        {photos.map((image) => (
+          <ProjectChild {...image}></ProjectChild>
         ))}
       </div>
     </section>
