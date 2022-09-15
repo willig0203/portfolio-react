@@ -2,6 +2,7 @@
   --primary-color: #fce138;
   --secondary-color: #024e76;
   --tertiary-color: #39a6b2;
+  --activeNav-color: rgba(240, 182, 186, 0.675);
   --txt-color: rgb(245, 20, 12);
   --spacing-one: calc(1rem * 0.5);
   --spacing-two: calc(1rem);
@@ -43,6 +44,10 @@ code {
 
 li {
   list-style: none;
+}
+
+.li {
+  font-size: 4rem;
 }
 
 
@@ -88,16 +93,18 @@ input:focus {
   margin-left: var(--spacing-two);
 }
 
-nav a:hover {
-  text-decoration: none;
+nav span:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--primary-color)
 }
 
 nav  li {
   cursor: pointer;
+  color: var(--tertiary-color)
 }
 
 .navActive {
-  color: var(--secondary-color);
+  color: var(--activeNav-color);
 }
 
 
@@ -110,10 +117,10 @@ nav  li {
 
 .about ul li {
   font-weight: lighter;
-  font-size: large;
+  font-size: 1em;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin-top: 50px;
+  margin-top: 25px;
   margin-right: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
   margin-left: 50px;
 }

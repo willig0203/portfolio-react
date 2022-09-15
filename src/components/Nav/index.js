@@ -1,21 +1,26 @@
 import React from "react";
-// import classNames from "classnames";
 
 function Nav(props) {
-  const { categories = [], setCurrentCategory } = props;
-
-  //   const clsName = classNames("mx-2", "nav", "navActive");
+  const {
+    categories = [],
+    setCurrentCategory,
+    currentEvent,
+    setCurrentEvent,
+  } = props;
 
   return (
     <header>
       <nav>
         <ul className="flex-row">
           {categories.map((category) => (
-            <li className={`mx-2 ${"navActive"}`} key={category.name}>
+            <li className="mx-2" key={category.name}>
               <span
+                className="mx-2"
                 onClick={(e) => {
                   setCurrentCategory(category);
+                  setCurrentEvent(e.target);
                   e.target.classList.toggle("navActive");
+                  currentEvent.classList.toggle("navActive");
                 }}
               >
                 {category.name}

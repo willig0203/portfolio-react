@@ -2,9 +2,9 @@ import React from "react";
 
 function About() {
   return (
-    <section class="about">
+    <section className="about">
       <h2>About Me</h2>
-      <div class="about-text">
+      <div className="about-text">
         <ul>
           <li>
             Solutions-driven .NET Developer with 20+ years’ experience

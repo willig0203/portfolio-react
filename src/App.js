@@ -19,6 +19,17 @@ function App() {
     },
   ]);
 
+  const [eventsNav] = useState([
+    { name: "About Me", evnt: null },
+    { name: "Portfolio", evnt: null },
+    { name: "Contact", evnt: null },
+    {
+      name: "Resume",
+      evnt: null,
+    },
+  ]);
+
+  const [currentEvent, setCurrentEvent] = useState(eventsNav[0]);
   // default about me
   const [currentCategory, setCurrentCategory] = useState(categories[0]);
 
@@ -28,6 +39,8 @@ function App() {
         <>
           <Header></Header>
           <Nav
+            currentEvent={currentEvent}
+            setCurrentEvent={setCurrentEvent}
             categories={categories}
             setCurrentCategory={setCurrentCategory}
           ></Nav>

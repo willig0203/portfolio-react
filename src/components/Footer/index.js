@@ -4,7 +4,7 @@ function Footer() {
   return (
     <div className="flex-row">
       <a
-        className="mx-2"
+        className="mx-2 nav navActive"
         href="https://github.com/willig0203"
         target="_blank"
         rel="noreferrer"
@@ -12,7 +12,7 @@ function Footer() {
         Github Profile
       </a>
       <a
-        className="mx-2"
+        className="mx-2 nav navActive"
         href="https://linkedin.com/in/gary-williams-b63825232"
         target="_blank"
         rel="noreferrer"
