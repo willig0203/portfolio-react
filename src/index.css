@@ -24,11 +24,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
 .flex-row {
   display: flex;
   flex-wrap: wrap;
@@ -49,7 +44,6 @@ li {
 .li {
   font-size: 4rem;
 }
-
 
 .form {
   width: 40%;
@@ -123,4 +117,17 @@ nav  li {
   margin-right: 50px;
   margin-bottom: 25px;
   margin-left: 50px;
+}
+
+.button {
+  background-color: #9787cb; 
+  border: solid;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  border: 1px solid var(--dark);
+  outline: solid;
+  border-radius: 3px;
 }

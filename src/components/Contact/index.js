@@ -44,31 +44,35 @@ function ContactForm() {
     <section>
       <h1 data-testid="h1tag">Contact me</h1>
       <form className="form" id="contact-form" onSubmit={handleSubmit}>
-        <div>
+        <div className="flex-row">
           <label htmlFor="name">Name:</label>
           <input
+            id="name"
             type="text"
             defaultValue={name}
             onBlur={handleChange}
             name="name"
           />
         </div>
-        <div>
+        <div className="flex-row">
           <label htmlFor="email">Email address:</label>
           <input
+            id="email"
             type="email"
             defaultValue={email}
             name="email"
             onBlur={handleChange}
           />
         </div>
-        <div>
+        <div className="flex-row">
           <label htmlFor="message">Message:</label>
           <textarea
+            id="message"
             name="message"
             defaultValue={message}
             onBlur={handleChange}
-            rows="5"
+            rows={5}
+            cols={50}
           />
         </div>
         {errorMessage && (
@@ -76,7 +80,7 @@ function ContactForm() {
             <p className="error-text">{errorMessage}</p>
           </div>
         )}
-        <button data-testid="buttontag" type="submit">
+        <button className="button" data-testid="buttontag" type="submit">
           Submit
         </button>
       </form>
