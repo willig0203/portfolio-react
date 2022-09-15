@@ -10,7 +10,11 @@ function Resume() {
           .NET, SQL, XML, JSON, OPC, REST, Web, API, HTTP
           <div>
             <a href={Pdf} without rel="noopener noreferrer" target="_blank">
-              <button trailingIcon="picture_as_pdf" label="Resume">
+              <button
+                className="button"
+                trailingIcon="picture_as_pdf"
+                label="Resume"
+              >
                 Open Resume in a new tab
               </button>
             </a>
