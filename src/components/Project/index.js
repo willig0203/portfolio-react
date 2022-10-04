@@ -6,6 +6,7 @@ import takeahike from "../../assets/images/projects/homescreenshot.jpg";
 import screenshotweb from "../../assets/images/projects/Screenshotweb.jpg";
 import passwordgenerator from "../../assets/images/projects/passwordGenerator.jpg";
 import pizzhunt from "../../assets/images/projects/pizzahuntweb.jpg";
+import whatssoap from "../../assets/images/projects/193481030-75cda666-a76c-4633-8fb3-dd483cbf89e3.png";
 import ProjectChild from "../ProjectChild";
 
 const Project = () => {
@@ -62,6 +63,14 @@ const Project = () => {
       description: "web app to log and discuss pizza recipies",
       github: "https://github.com/willig0203/pizza-hunt",
       deployed: "https://pizza-hunt-gdw.herokuapp.com/",
+    },
+    {
+      image: whatssoap,
+      name: "Whats Soap",
+      category: ".",
+      description: "web app to log and discuss soap recipies",
+      github: "https://github.com/AlexandertheGreat491/whats_soap",
+      deployed: "https://whats-soap.herokuapp.com/ ",
     },
   ]);
 
