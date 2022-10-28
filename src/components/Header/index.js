@@ -12,9 +12,14 @@ function Header() {
         style={{ maxWidth: 101, maxHeight: 101 }}
         alt="headshot"
       />
-      <h1 className="mx-2" id="about">
-        Gary Williams
-      </h1>
+      <div>
+        <h1 className="mx-2" id="about">
+          Gary Williams
+        </h1>
+        <h3 className="mx-2" id="about">
+          willig0203@gmail.com
+        </h3>
+      </div>
       <img
         src={headerlogo}
         className="my-2"

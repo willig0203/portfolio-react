@@ -1,23 +1,21 @@
 import React, { useState } from "react";
 import { validateEmail } from "../../utils/helpers";
+import emailjs from "@emailjs/browser";
 
 function ContactForm() {
-  // JSX
   const [errorMessage, setErrorMessage] = useState("");
 
   const [formState, setFormState] = useState({
-    name: "",
-    email: "",
+    user_name: "",
+    user_email: "",
     message: "",
   });
 
-  const { name, email, message } = formState;
+  const { user_name, user_email, message } = formState;
 
   function handleChange(e) {
     if (e.target.name === "email") {
       const isValid = validateEmail(e.target.value);
-      console.log(isValid);
-      // isValid conditional statement
       if (!isValid) {
         setErrorMessage("Your email is invalid.");
       } else {
@@ -37,7 +35,23 @@ function ContactForm() {
 
   function handleSubmit(e) {
     e.preventDefault();
-    console.log(formState);
+    emailjs
+      .send(
+        "contact_service",
+        "template_ca98o5h",
+        formState,
+        "RT-mQAoqHwGWcvLSI"
+      )
+      .then(
+        (result) => {
+          setFormState({ user_name: "", user_email: "", message: "" });
+          alert("Email Sent!");
+          e.target.reset();
+        },
+        (error) => {
+          alert("Email Error!");
+        }
+      );
   }
 
   return (
@@ -49,9 +63,9 @@ function ContactForm() {
           <input
             id="name"
             type="text"
-            defaultValue={name}
+            defaultValue={user_name}
             onBlur={handleChange}
-            name="name"
+            name="user_name"
           />
         </div>
         <div className="flex-row">
@@ -59,8 +73,8 @@ function ContactForm() {
           <input
             id="email"
             type="email"
-            defaultValue={email}
-            name="email"
+            defaultValue={user_email}
+            name="user_email"
             onBlur={handleChange}
           />
         </div>
