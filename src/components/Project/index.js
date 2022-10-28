@@ -72,7 +72,7 @@ const Project = () => {
       category: ".",
       description1: "Web app to post and discuss pizza recipies",
       description2: ".",
-      description3: "No Readme File!",
+      description3: "Need to create Readme File!",
       description4: ".",
       github: "https://github.com/willig0203/pizza-hunt",
       deployed: "https://pizza-hunt-gdw.herokuapp.com/",
