@@ -16,7 +16,7 @@ function Header() {
         <h1 className="mx-2" id="about">
           Gary Williams
         </h1>
-        <h3 className="mx-2" id="about">
+        <h3 className={"mx-2"} id="email">
           willig0203@gmail.com
         </h3>
       </div>

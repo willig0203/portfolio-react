@@ -6,9 +6,11 @@ const ProjectChild = (image) => {
       <div className="flex-col">
         <div>
           <h5>{image.name}</h5>
-          <h6>{image.description}</h6>
+          <h6>{image.description1}</h6>
+          <h6>{image.description2}</h6>
+          <h6>{image.description3}</h6>
           <a
-            className={"mx-2 nav navActive"}
+            className={"mx-1 navLinks navActive"}
             href={image.github}
             target="_blank"
             rel="noopener noreferrer"
@@ -16,7 +18,7 @@ const ProjectChild = (image) => {
             Github Repo
           </a>
           <a
-            className={"mx-2 nav navActive"}
+            className={"mx-1 navLinks navActive"}
             href={image.deployed}
             target="_blank"
             rel="noopener noreferrer"

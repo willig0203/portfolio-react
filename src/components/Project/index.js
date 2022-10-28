@@ -15,8 +15,10 @@ const Project = () => {
       image: moviefinder,
       name: "Movie Finder",
       category: "mvc",
-      description:
-        "Search for a movie and find any streaming service that is streaming it.",
+      description1: "Search for a movie and find any streaming",
+      description2: " service that is streaming it.",
+      description3: "HTML, CSS, Flex-Box, JavaScript, Tailwind",
+
       github: "https://github.com/willig0203/Movie-Finder",
       deployed: "https://darioorbita.github.io/Movie-Finder/",
     },
@@ -24,8 +26,9 @@ const Project = () => {
       image: taskmasterpro,
       name: "Taskmaster Pro",
       category: "mvc",
-      description:
-        "Manage tasks between status columns, Drag and Drop functionality",
+      description1: "Manage tasks between status columns,",
+      description2: " Drag and Drop functionality",
+      description3: ".",
       github: "https://github.com/willig0203/taskmaster-pro",
       deployed: "https://willig0203.github.io/taskmaster-pro/",
     },
@@ -33,8 +36,10 @@ const Project = () => {
       image: takeahike,
       name: "Take a hike",
       category: "heroku",
-      description:
-        "Users can post their thoughts on all things about hiking trails.",
+      description1: "Users can post their thoughts on all",
+      description2: " things about hiking trails.",
+      description3:
+        "HTML, CSS, Flex-Box, JavaScript, Node.js, Sequelize, Express",
       github: "https://github.com/willig0203/Take-A-Hike",
       deployed: "https://takea-hike.herokuapp.com/",
     },
@@ -42,8 +47,9 @@ const Project = () => {
       image: screenshotweb,
       name: "Portfolio React",
       category: "react",
-      description:
-        "Web application built using React to showcase my development projects.",
+      description1: "Web app built using React to showcase",
+      description2: " development projects.",
+      description3: ".",
       github: "https://github.com/willig0203/portfolio-react",
       deployed: "https://willig0203.github.io/portfolio-react/",
     },
@@ -51,7 +57,9 @@ const Project = () => {
       image: passwordgenerator,
       name: "Password Genereator",
       category: ".",
-      description: "Generate a unique password.",
+      description1: "Generate a unique password.",
+      description2: ".",
+      description3: ".",
       github: "https://github.com/willig0203/passwordGenerator",
       deployed: "https://willig0203.github.io/passwordGenerator/",
     },
@@ -59,7 +67,9 @@ const Project = () => {
       image: pizzhunt,
       name: "Pizza Hunt",
       category: ".",
-      description: "web app to log and discuss pizza recipies",
+      description1: "Web app to log and discuss pizza recipies",
+      description2: ".",
+      description3: ".",
       github: "https://github.com/willig0203/pizza-hunt",
       deployed: "https://pizza-hunt-gdw.herokuapp.com/",
     },
@@ -67,7 +77,9 @@ const Project = () => {
       image: whatssoap,
       name: "Whats Soap",
       category: ".",
-      description: "web app to log and discuss soap recipies",
+      description1: "Web app to log and discuss soap recipies",
+      description2: ".",
+      description3: ".",
       github: "https://github.com/AlexandertheGreat491/whats_soap",
       deployed: "https://whats-soap.herokuapp.com/ ",
     },
@@ -75,6 +87,7 @@ const Project = () => {
 
   return (
     <section>
+      <h2>Portfolio</h2>
       <div className={"mx-2 flex-row space-between"}>
         {photos.map((image) => (
           <ProjectChild {...image}></ProjectChild>

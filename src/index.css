@@ -87,6 +87,11 @@ input:focus {
   margin-left: var(--spacing-two);
 }
 
+.my-2 {
+  margin-top: var(--spacing-two);
+  margin-bottom: var(--spacing-two);
+}
+
 nav span:hover {
   text-decoration: underline;
   text-decoration-color: var(--primary-color)
@@ -101,6 +106,10 @@ nav  li {
   color: var(--activeNav-color);
 }
 
+
+.navLinks {
+  font-size: 0.7em;
+}
 
 .about h2 {
   font-weight: bolder;
@@ -132,8 +141,6 @@ nav  li {
   border-radius: 3px;
 }
 
-/* h6{
-  display: flex;
-  flex-wrap: wrap;
-
-} */
+h6{
+  font-size: 0.5em;
+}
