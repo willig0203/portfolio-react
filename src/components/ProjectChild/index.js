@@ -9,6 +9,7 @@ const ProjectChild = (image) => {
           <h6>{image.description1}</h6>
           <h6>{image.description2}</h6>
           <h6>{image.description3}</h6>
+          <h6>{image.description4}</h6>
           <a
             className={"mx-1 navLinks navActive"}
             href={image.github}
