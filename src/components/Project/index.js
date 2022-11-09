@@ -7,6 +7,8 @@ import screenshotweb from "../../assets/images/projects/Screenshotweb.jpg";
 import passwordgenerator from "../../assets/images/projects/passwordGenerator.jpg";
 import pizzhunt from "../../assets/images/projects/pizzahuntweb.jpg";
 import whatssoap from "../../assets/images/projects/193481030-75cda666-a76c-4633-8fb3-dd483cbf89e3.png";
+import notetaker from "../../assets/images/projects/NoteTaker.png";
+
 import ProjectChild from "../ProjectChild";
 
 const Project = () => {
@@ -86,7 +88,18 @@ const Project = () => {
       description3: "Apollo Server Bootstrap GraphQL",
       description4: "JWT MongoDB, Mongoose Cloudinary",
       github: "https://github.com/AlexandertheGreat491/whats_soap",
-      deployed: "https://whats-soap.herokuapp.com/ ",
+      deployed: "https://whats-soap.herokuapp.com/",
+    },
+    {
+      image: notetaker,
+      name: "Note Taker",
+      category: ".",
+      description1: "Web app to post a List of Notes",
+      description2: "HTML CSS JavaScript Node.js",
+      description3: "Heroku Express",
+      description4: "JSON UUID",
+      github: "https://github.com/willig0203/note-taker",
+      deployed: "https://note-taker-gdw.herokuapp.com/",
     },
   ]);
 
