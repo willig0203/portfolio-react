@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio-react/static/css/main.af6452f1.css",
-    "main.js": "/portfolio-react/static/js/main.4cf2fd0e.js",
+    "main.js": "/portfolio-react/static/js/main.37917141.js",
     "static/js/787.aeca62f9.chunk.js": "/portfolio-react/static/js/787.aeca62f9.chunk.js",
     "static/media/193481030-75cda666-a76c-4633-8fb3-dd483cbf89e3.png": "/portfolio-react/static/media/193481030-75cda666-a76c-4633-8fb3-dd483cbf89e3.01c6e40d414d2fba6049.png",
     "static/media/Movie Finder.jpg": "/portfolio-react/static/media/Movie Finder.f5539429ed1d214d8dda.jpg",
@@ -13,14 +13,15 @@
     "static/media/passwordGenerator.jpg": "/portfolio-react/static/media/passwordGenerator.81e48a4eb9c670b9d717.jpg",
     "static/media/GaryPicHead.JPG": "/portfolio-react/static/media/GaryPicHead.46aefee5b395c739939a.JPG",
     "static/media/Logo01f.jpeg": "/portfolio-react/static/media/Logo01f.3ae91fed2f19c9da17fb.jpeg",
+    "static/media/NoteTaker.png": "/portfolio-react/static/media/NoteTaker.0937b7b85df4776d42e3.png",
     "static/media/614-2000x100.jpg": "/portfolio-react/static/media/614-2000x100.25d1b1ab03f78d5c9154.jpg",
     "index.html": "/portfolio-react/index.html",
     "main.af6452f1.css.map": "/portfolio-react/static/css/main.af6452f1.css.map",
-    "main.4cf2fd0e.js.map": "/portfolio-react/static/js/main.4cf2fd0e.js.map",
+    "main.37917141.js.map": "/portfolio-react/static/js/main.37917141.js.map",
     "787.aeca62f9.chunk.js.map": "/portfolio-react/static/js/787.aeca62f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.af6452f1.css",
-    "static/js/main.4cf2fd0e.js"
+    "static/js/main.37917141.js"
   ]
 }
